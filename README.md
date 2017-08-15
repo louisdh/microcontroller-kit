@@ -14,7 +14,7 @@ MicrocontrollerKit is a Swift framework containing basic value types, operators 
 
 ### Seven-segment display
 In the macOS example, 2 nibbles are created and added. Its sum is given to a `SevenSegmentDisplay`, which has a textual representation using emoticons.
-![](readme-resources/seven-segment-example.png)
+![](readme-resources/seven-segment-example_.png)
 
 ## Requirements
 * Xcode 8.3+
