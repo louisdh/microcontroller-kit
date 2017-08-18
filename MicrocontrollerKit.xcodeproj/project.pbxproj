@@ -8,16 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		BE032AED1F436A4C00895020 /* MicrocontrollerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BE032AEB1F436A4C00895020 /* MicrocontrollerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE68D5D11F476F1A00CA7F52 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE68D5D01F476F1A00CA7F52 /* Tests.swift */; };
+		BE68D5D31F476F1A00CA7F52 /* MicrocontrollerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE032ABF1F4367DF00895020 /* MicrocontrollerKit.framework */; };
 		BEAA50DA1F436D7E00FADC84 /* Adders.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAA50D61F436D7E00FADC84 /* Adders.swift */; };
 		BEAA50DB1F436D7E00FADC84 /* Bit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAA50D71F436D7E00FADC84 /* Bit.swift */; };
 		BEAA50DC1F436D7E00FADC84 /* Nibble.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAA50D81F436D7E00FADC84 /* Nibble.swift */; };
 		BEAA50DD1F436D7E00FADC84 /* SevenSegmentDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAA50D91F436D7E00FADC84 /* SevenSegmentDisplay.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BE68D5D41F476F1A00CA7F52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE5C3FB41F420A2600E7AF2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE032ABE1F4367DF00895020;
+			remoteInfo = "MicrocontrollerKit macOS";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		BE032ABF1F4367DF00895020 /* MicrocontrollerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MicrocontrollerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE032AEA1F436A4C00895020 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = macOS/Info.plist; sourceTree = SOURCE_ROOT; };
 		BE032AEB1F436A4C00895020 /* MicrocontrollerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MicrocontrollerKit.h; path = macOS/MicrocontrollerKit.h; sourceTree = SOURCE_ROOT; };
+		BE68D5CE1F476F1A00CA7F52 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE68D5D01F476F1A00CA7F52 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		BE68D5D21F476F1A00CA7F52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEAA50D61F436D7E00FADC84 /* Adders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Adders.swift; path = Sources/MicrocontrollerKit/Adders.swift; sourceTree = SOURCE_ROOT; };
 		BEAA50D71F436D7E00FADC84 /* Bit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bit.swift; path = Sources/MicrocontrollerKit/Bit.swift; sourceTree = SOURCE_ROOT; };
 		BEAA50D81F436D7E00FADC84 /* Nibble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Nibble.swift; path = Sources/MicrocontrollerKit/Nibble.swift; sourceTree = SOURCE_ROOT; };
@@ -29,6 +44,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE68D5CB1F476F1A00CA7F52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE68D5D31F476F1A00CA7F52 /* MicrocontrollerKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				BE032AC01F4367DF00895020 /* MicrocontrollerKit */,
+				BE68D5CF1F476F1A00CA7F52 /* Tests */,
 				BE5C3FBD1F420A2600E7AF2E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,8 +101,18 @@
 			isa = PBXGroup;
 			children = (
 				BE032ABF1F4367DF00895020 /* MicrocontrollerKit.framework */,
+				BE68D5CE1F476F1A00CA7F52 /* Tests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BE68D5CF1F476F1A00CA7F52 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BE68D5D01F476F1A00CA7F52 /* Tests.swift */,
+				BE68D5D21F476F1A00CA7F52 /* Info.plist */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,6 +147,24 @@
 			productReference = BE032ABF1F4367DF00895020 /* MicrocontrollerKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		BE68D5CD1F476F1A00CA7F52 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE68D5D81F476F1A00CA7F52 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				BE68D5CA1F476F1A00CA7F52 /* Sources */,
+				BE68D5CB1F476F1A00CA7F52 /* Frameworks */,
+				BE68D5CC1F476F1A00CA7F52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE68D5D51F476F1A00CA7F52 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = BE68D5CE1F476F1A00CA7F52 /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -126,6 +178,11 @@
 					BE032ABE1F4367DF00895020 = {
 						CreatedOnToolsVersion = 8.3.3;
 						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					BE68D5CD1F476F1A00CA7F52 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 6G5LMQ72D8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -143,12 +200,20 @@
 			projectRoot = "";
 			targets = (
 				BE032ABE1F4367DF00895020 /* MicrocontrollerKit macOS */,
+				BE68D5CD1F476F1A00CA7F52 /* Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		BE032ABD1F4367DF00895020 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE68D5CC1F476F1A00CA7F52 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -169,7 +234,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BE68D5CA1F476F1A00CA7F52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE68D5D11F476F1A00CA7F52 /* Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE68D5D51F476F1A00CA7F52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE032ABE1F4367DF00895020 /* MicrocontrollerKit macOS */;
+			targetProxy = BE68D5D41F476F1A00CA7F52 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BE032AC51F4367DF00895020 /* Debug */ = {
@@ -325,6 +406,36 @@
 			};
 			name = Release;
 		};
+		BE68D5D61F476F1A00CA7F52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6G5LMQ72D8;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = be.silverfox.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BE68D5D71F476F1A00CA7F52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6G5LMQ72D8;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = be.silverfox.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -345,6 +456,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		BE68D5D81F476F1A00CA7F52 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE68D5D61F476F1A00CA7F52 /* Debug */,
+				BE68D5D71F476F1A00CA7F52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
