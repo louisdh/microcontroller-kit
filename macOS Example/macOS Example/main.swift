@@ -23,4 +23,3 @@ print("\(sum.description) (\(sum.decimalValue))\n")
 
 let sevenSegment = SevenSegmentDisplay(nibble: sum)
 print(sevenSegment.description)
-
