@@ -12,7 +12,7 @@ env:
   - EXAMPLE_SCHEME="macOS Example"
   matrix:
 
-    - DESTINATION="arch=x86_64"                    SCHEME="$MACOS_FRAMEWORK_SCHEME"   RUN_TESTS="NO" BUILD_EXAMPLE="NO"  CODE_COV="NO"
+    - DESTINATION="arch=x86_64"                    SCHEME="$MACOS_FRAMEWORK_SCHEME"   RUN_TESTS="YES" BUILD_EXAMPLE="YES"  CODE_COV="YES"
 
 script:
   - set -o pipefail
