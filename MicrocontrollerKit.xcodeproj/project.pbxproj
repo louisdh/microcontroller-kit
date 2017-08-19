@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		BE032AED1F436A4C00895020 /* MicrocontrollerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BE032AEB1F436A4C00895020 /* MicrocontrollerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE68D5D11F476F1A00CA7F52 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE68D5D01F476F1A00CA7F52 /* Tests.swift */; };
+		BE68D5D11F476F1A00CA7F52 /* BitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE68D5D01F476F1A00CA7F52 /* BitTests.swift */; };
 		BE68D5D31F476F1A00CA7F52 /* MicrocontrollerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE032ABF1F4367DF00895020 /* MicrocontrollerKit.framework */; };
+		BEA5B2C11F47879E00BB87AF /* NibbleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA5B2C01F47879E00BB87AF /* NibbleTests.swift */; };
 		BEAA50DA1F436D7E00FADC84 /* Adders.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAA50D61F436D7E00FADC84 /* Adders.swift */; };
 		BEAA50DB1F436D7E00FADC84 /* Bit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAA50D71F436D7E00FADC84 /* Bit.swift */; };
 		BEAA50DC1F436D7E00FADC84 /* Nibble.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAA50D81F436D7E00FADC84 /* Nibble.swift */; };
@@ -31,8 +32,9 @@
 		BE032AEA1F436A4C00895020 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = macOS/Info.plist; sourceTree = SOURCE_ROOT; };
 		BE032AEB1F436A4C00895020 /* MicrocontrollerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MicrocontrollerKit.h; path = macOS/MicrocontrollerKit.h; sourceTree = SOURCE_ROOT; };
 		BE68D5CE1F476F1A00CA7F52 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE68D5D01F476F1A00CA7F52 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		BE68D5D01F476F1A00CA7F52 /* BitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitTests.swift; sourceTree = "<group>"; };
 		BE68D5D21F476F1A00CA7F52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEA5B2C01F47879E00BB87AF /* NibbleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibbleTests.swift; sourceTree = "<group>"; };
 		BEAA50D61F436D7E00FADC84 /* Adders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Adders.swift; path = Sources/MicrocontrollerKit/Adders.swift; sourceTree = SOURCE_ROOT; };
 		BEAA50D71F436D7E00FADC84 /* Bit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bit.swift; path = Sources/MicrocontrollerKit/Bit.swift; sourceTree = SOURCE_ROOT; };
 		BEAA50D81F436D7E00FADC84 /* Nibble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Nibble.swift; path = Sources/MicrocontrollerKit/Nibble.swift; sourceTree = SOURCE_ROOT; };
@@ -109,7 +111,8 @@
 		BE68D5CF1F476F1A00CA7F52 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				BE68D5D01F476F1A00CA7F52 /* Tests.swift */,
+				BE68D5D01F476F1A00CA7F52 /* BitTests.swift */,
+				BEA5B2C01F47879E00BB87AF /* NibbleTests.swift */,
 				BE68D5D21F476F1A00CA7F52 /* Info.plist */,
 			);
 			path = Tests;
@@ -238,7 +241,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE68D5D11F476F1A00CA7F52 /* Tests.swift in Sources */,
+				BE68D5D11F476F1A00CA7F52 /* BitTests.swift in Sources */,
+				BEA5B2C11F47879E00BB87AF /* NibbleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +468,7 @@
 				BE68D5D71F476F1A00CA7F52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

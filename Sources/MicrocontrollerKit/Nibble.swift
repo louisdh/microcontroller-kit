@@ -33,6 +33,17 @@ extension Nibble: CustomStringConvertible {
 	
 }
 
+extension Nibble: Equatable {
+
+	public static func ==(lhs: Nibble, rhs: Nibble) -> Bool {
+		return lhs.b0 == rhs.b0
+			&& lhs.b1 == rhs.b1
+			&& lhs.b2 == rhs.b2
+			&& lhs.b3 == rhs.b3
+	}
+	
+}
+
 public extension Nibble {
 	
 	var decimalValue: Int {
