@@ -54,8 +54,6 @@ class BitTests: XCTestCase {
 	
 	func testComparison() {
 		
-		let a = .zero < .one
-		
 		XCTAssert(.zero < .one)
 		
 	}
