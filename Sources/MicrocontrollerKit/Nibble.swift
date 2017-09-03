@@ -44,6 +44,14 @@ extension Nibble: Equatable {
 
 }
 
+extension Nibble: Comparable {
+	
+	public static func <(lhs: Nibble, rhs: Nibble) -> Bool {
+		return lhs.decimalValue < rhs.decimalValue
+	}
+	
+}
+
 public extension Nibble {
 
 	var decimalValue: Int {

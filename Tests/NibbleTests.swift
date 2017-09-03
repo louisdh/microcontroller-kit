@@ -39,4 +39,14 @@ class NibbleTests: XCTestCase {
 
 	}
 
+	func testComparison() {
+		
+		let nibble1 = Nibble(b0: .zero, b1: .one, b2: .zero, b3: .one)
+		let nibble2 = Nibble(b0: .zero, b1: .zero, b2: .one, b3: .one)
+		
+		XCTAssert(nibble1 < nibble2)
+		XCTAssertFalse(nibble2 < nibble1)
+
+	}
+	
 }
