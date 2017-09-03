@@ -25,6 +25,14 @@ extension Bit: Equatable {
 
 }
 
+extension Bit: Comparable {
+
+	public static func <(lhs: Bit, rhs: Bit) -> Bool {
+		return lhs.rawValue < rhs.rawValue
+	}
+	
+}
+
 extension Bit: CustomStringConvertible {
 
 	public var description: String {

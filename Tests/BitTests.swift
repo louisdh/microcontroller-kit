@@ -51,5 +51,13 @@ class BitTests: XCTestCase {
 		XCTAssertEqual(Bit.one.description, "1")
 
 	}
+	
+	func testComparison() {
+		
+		let a = .zero < .one
+		
+		XCTAssert(.zero < .one)
+		
+	}
 
 }
