@@ -7,7 +7,7 @@
 <a href="https://codeclimate.com/github/louisdh/microcontroller-kit"><img src="https://codeclimate.com/github/louisdh/microcontroller-kit/badges/gpa.svg" style="max-height: 300px;" alt="Code Climate"/></a>
 <a href="https://codecov.io/gh/louisdh/microcontroller-kit"><img src="https://codecov.io/gh/louisdh/microcontroller-kit/branch/master/graph/badge.svg" alt="Codecov"/></a>
 <br>
-<a href="https://developer.apple.com/swift/"><img src="https://img.shields.io/badge/Swift-3.1-orange.svg?style=flat" style="max-height: 300px;" alt="Swift"/></a>
+<a href="https://developer.apple.com/swift/"><img src="https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat" style="max-height: 300px;" alt="Swift"/></a>
 <img src="https://img.shields.io/badge/platform-macOS-lightgrey.svg" style="max-height: 300px;" alt="Platform: macOS">
 <a href="http://twitter.com/LouisDhauwe"><img src="https://img.shields.io/badge/Twitter-@LouisDhauwe-blue.svg?style=flat" style="max-height: 300px;" alt="Twitter"/></a>
 </p>
@@ -21,7 +21,7 @@ In the macOS example, 2 nibbles are created and added. Its sum is given to a `Se
 ![](readme-resources/seven-segment-example_.png)
 
 ## Requirements
-* Xcode 8.3+
+* Xcode 9.0+
 
 ## License
 
