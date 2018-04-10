@@ -13,7 +13,7 @@ import Foundation
 /// numerals that is an alternative to the more complex dot matrix displays.
 ///
 /// *More info*: [Wikipedia](https://en.wikipedia.org/wiki/Seven-segment_display)
-public struct SevenSegmentDisplay {
+public struct SevenSegmentDisplay: Hashable {
 
 	public let a: Bit
 	public let b: Bit

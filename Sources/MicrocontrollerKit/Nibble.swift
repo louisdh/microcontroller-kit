@@ -9,7 +9,7 @@
 import Foundation
 
 /// 4 bits
-public struct Nibble {
+public struct Nibble: Hashable {
 
 	public let b0: Bit
 	public let b1: Bit
@@ -29,17 +29,6 @@ extension Nibble: CustomStringConvertible {
 
 	public var description: String {
 		return "\(b3)\(b2)\(b1)\(b0)"
-	}
-
-}
-
-extension Nibble: Equatable {
-
-	public static func ==(lhs: Nibble, rhs: Nibble) -> Bool {
-		return lhs.b0 == rhs.b0
-			&& lhs.b1 == rhs.b1
-			&& lhs.b2 == rhs.b2
-			&& lhs.b3 == rhs.b3
 	}
 
 }

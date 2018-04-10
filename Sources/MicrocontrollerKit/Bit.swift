@@ -8,21 +8,13 @@
 
 import Foundation
 
-public enum Bit: Int {
+public enum Bit: Int, Hashable {
 
 	/// False (0).
 	case zero = 0
 
 	/// True (1).
 	case one = 1
-}
-
-extension Bit: Equatable {
-
-	public static func ==(lhs: Bit, rhs: Bit) -> Bool {
-		return lhs.rawValue == rhs.rawValue
-	}
-
 }
 
 extension Bit: Comparable {
